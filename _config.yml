@@ -3,18 +3,21 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle: ''
+title: Blog
+subtitle: 'welcommmmmme.'
 description: ''
 keywords:
-author: John Doe
-language: en
+author: Kaximiss
+language: zh-CN
 timezone: ''
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
+url: https://kaximiss.github.io
+permalink: posts/:abbrlink.html
+abbrlink:
+  alg: crc32
+  rep: hex
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -40,7 +43,7 @@ external_link:
   exclude: ''
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -97,9 +100,45 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: git@github.com:kaximiss/kaximiss.github.io.git
+  branch: main
+
+
+## hexo-word-counter
+symbols_count_time:
+ #文章内是否显示
+  symbols: true
+  time: true
+ # 网页底部是否显示
+  total_symbols: true
+  total_time: true
+  exclude_codeblock: false
+  awl: 2
+  wpm: 400
+
+# hexo-generator-feed
+feed:
+  type: 
+    - rss2
+    - atom
+  path: 
+    - atom.xml
+    - rss2.xml
+  limit: 3
+  hub:
+  enable: true
+  content: 'true'
+
+
+#for hexo-generator-searchdb
+search:
+  path: search.xml
+  field: post
+  content: true
+  format: html
