@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>APUE_note</title>
-    <url>/post/d1b40951/</url>
-    <content><![CDATA[<h1 id="Chapter1-Unix基础知识"><a href="#Chapter1-Unix基础知识" class="headerlink" title="Chapter1 Unix基础知识"></a>Chapter1 Unix基础知识</h1><p>从认识内核、系统调用、shell、应用程序的关系开始：</p>
-<p><img src="/./APUE-note/c1p1.png" alt="image-20220218172954224"></p>
+    <title>APUE学习笔记(更新中)</title>
+    <url>/post/8316635e/</url>
+    <content><![CDATA[<h2 id="Chapter-1-Unix基础知识"><a href="#Chapter-1-Unix基础知识" class="headerlink" title="Chapter 1  Unix基础知识"></a>Chapter 1  Unix基础知识</h2><p>首先宏观地看一看，由小到大的顺序： 内核-系统调用-Shell&#x2F;公用函数库-应用程序</p>
+<p><img src="/post/8316635e/c1.png" alt="c1"></p>
 ]]></content>
       <categories>
-        <category>笔记</category>
+        <category>学习笔记</category>
       </categories>
       <tags>
         <tag>unix</tag>
-        <tag>编程</tag>
+        <tag>programming</tag>
       </tags>
   </entry>
   <entry>

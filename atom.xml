@@ -6,7 +6,7 @@
   <link href="https://kaximiss.github.io/atom.xml" rel="self"/>
   
   <link href="https://kaximiss.github.io/"/>
-  <updated>2022-02-18T09:38:31.975Z</updated>
+  <updated>2022-02-18T10:05:35.474Z</updated>
   <id>https://kaximiss.github.io/</id>
   
   <author>
@@ -17,28 +17,28 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>APUE_note</title>
-    <link href="https://kaximiss.github.io/post/d1b40951/"/>
-    <id>https://kaximiss.github.io/post/d1b40951/</id>
-    <published>2022-02-18T09:03:56.000Z</published>
-    <updated>2022-02-18T09:38:31.975Z</updated>
+    <title>APUE学习笔记(更新中)</title>
+    <link href="https://kaximiss.github.io/post/8316635e/"/>
+    <id>https://kaximiss.github.io/post/8316635e/</id>
+    <published>2022-02-18T09:54:41.000Z</published>
+    <updated>2022-02-18T10:05:35.474Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Chapter1-Unix基础知识"><a href="#Chapter1-Unix基础知识" class="headerlink" title="Chapter1 Unix基础知识"></a>Chapter1 Unix基础知识</h1><p>从认识内核、系统调用、shell、应用程序的关系开始：</p><p><img src="/./APUE-note/c1p1.png" alt="image-20220218172954224"></p>]]></content>
+    <content type="html"><![CDATA[<h2 id="Chapter-1-Unix基础知识"><a href="#Chapter-1-Unix基础知识" class="headerlink" title="Chapter 1  Unix基础知识"></a>Chapter 1  Unix基础知识</h2><p>首先宏观地看一看，由小到大的顺序： 内核-系统调用-Shell&#x2F;公用函数库-应用程序</p><p><img src="/post/8316635e/c1.png" alt="c1"></p>]]></content>
     
     
       
       
-    <summary type="html">&lt;h1 id=&quot;Chapter1-Unix基础知识&quot;&gt;&lt;a href=&quot;#Chapter1-Unix基础知识&quot; class=&quot;headerlink&quot; title=&quot;Chapter1 Unix基础知识&quot;&gt;&lt;/a&gt;Chapter1 Unix基础知识&lt;/h1&gt;&lt;p&gt;从认识内核、系统调用</summary>
+    <summary type="html">&lt;h2 id=&quot;Chapter-1-Unix基础知识&quot;&gt;&lt;a href=&quot;#Chapter-1-Unix基础知识&quot; class=&quot;headerlink&quot; title=&quot;Chapter 1  Unix基础知识&quot;&gt;&lt;/a&gt;Chapter 1  Unix基础知识&lt;/h2&gt;&lt;p&gt;首先宏观</summary>
       
     
     
     
-    <category term="笔记" scheme="https://kaximiss.github.io/categories/%E7%AC%94%E8%AE%B0/"/>
+    <category term="学习笔记" scheme="https://kaximiss.github.io/categories/%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
     <category term="unix" scheme="https://kaximiss.github.io/tags/unix/"/>
     
-    <category term="编程" scheme="https://kaximiss.github.io/tags/%E7%BC%96%E7%A8%8B/"/>
+    <category term="programming" scheme="https://kaximiss.github.io/tags/programming/"/>
     
   </entry>
   
