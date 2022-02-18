@@ -24,23 +24,32 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"kaximiss.github.io","root":"/","images":"/images","scheme":"Mist","darkmode":false,"version":"8.10.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":10,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Blog">
-<meta property="og:url" content="https://kaximiss.github.io/index.html">
+  <meta name="description" content="Chapter1 Unix基础知识从认识内核、系统调用、shell、应用程序的关系开始：">
+<meta property="og:type" content="website">
+<meta property="og:title" content="APUE_notes">
+<meta property="og:url" content="https://kaximiss.github.io/APUE-notes.html">
 <meta property="og:site_name" content="Blog">
+<meta property="og:description" content="Chapter1 Unix基础知识从认识内核、系统调用、shell、应用程序的关系开始：">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://kaximiss.github.io/blogs/kaximiss.github.io/source_posts/APUE-notes/c1p1.png">
+<meta property="article:published_time" content="2022-02-18T09:03:56.000Z">
+<meta property="article:modified_time" content="2022-02-18T09:26:01.951Z">
 <meta property="article:author" content="Kaximiss">
+<meta property="article:tag" content="unix">
+<meta property="article:tag" content="编程">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://kaximiss.github.io/blogs/kaximiss.github.io/source_posts/APUE-notes/c1p1.png">
 
 
-<link rel="canonical" href="https://kaximiss.github.io/">
+<link rel="canonical" href="https://kaximiss.github.io/APUE-notes">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":false,"lang":"zh-CN","comments":true,"permalink":"https://kaximiss.github.io/APUE-notes.html","path":"APUE-notes.html","title":"APUE_notes"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Blog</title>
+<title>APUE_notes | Blog
+</title>
   
 
 
@@ -72,7 +81,7 @@
 
     <a href="/" class="brand" rel="start">
       <i class="logo-line"></i>
-      <h1 class="site-title">Blog</h1>
+      <p class="site-title">Blog</p>
       <i class="logo-line"></i>
     </a>
       <p class="site-subtitle" itemprop="description">welcommmmmme.</p>
@@ -134,7 +143,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -147,6 +156,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Chapter1-Unix%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86"><span class="nav-number">1.</span> <span class="nav-text">Chapter1 Unix基础知识</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -214,191 +224,38 @@
 </noscript>
 
 
-    <div class="main-inner index posts-expand">
+    <div class="main-inner page posts-expand">
+  
+  
+
 
     
+    
+    
+    <div class="post-block" lang="zh-CN"><header class="post-header">
 
+<h1 class="post-title" itemprop="name headline">APUE_notes
+</h1>
 
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kaximiss.github.io/post/d1b40951/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/easycat.jpg">
-      <meta itemprop="name" content="Kaximiss">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/post/d1b40951/" class="post-title-link" itemprop="url">APUE_note</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2022-02-18 17:03:56 / 修改时间：17:38:31" itemprop="dateCreated datePublished" datetime="2022-02-18T17:03:56+08:00">2022-02-18</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">笔记</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>43</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>1 分钟</span>
-    </span>
+<div class="post-meta-container">
 </div>
 
-        </div>
-      </header>
+</header>
 
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
+      
+      
+      <div class="post-body">
           <h1 id="Chapter1-Unix基础知识"><a href="#Chapter1-Unix基础知识" class="headerlink" title="Chapter1 Unix基础知识"></a>Chapter1 Unix基础知识</h1><p>从认识内核、系统调用、shell、应用程序的关系开始：</p>
-<p><img src="/./APUE-note/c1p1.png" alt="image-20220218172954224"></p>
+<p><img src="/blogs\kaximiss.github.io\source_posts\APUE-notes\c1p1.png" alt="rings"></p>
 
+      </div>
+      
+      
       
     </div>
 
     
     
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://kaximiss.github.io/post/c6e02c3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/easycat.jpg">
-      <meta itemprop="name" content="Kaximiss">
-      <meta itemprop="description" content="">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Blog">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/post/c6e02c3/" class="post-title-link" itemprop="url">咱们老百姓"同情的理解"</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">发表于</span>
-      
-
-      <time title="创建时间：2022-02-17 19:59:16 / 修改时间：21:55:25" itemprop="dateCreated datePublished" datetime="2022-02-17T19:59:16+08:00">2022-02-17</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-folder"></i>
-      </span>
-      <span class="post-meta-item-text">分类于</span>
-        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E8%AF%BB%E4%B9%A6%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">读书笔记</span></a>
-        </span>
-    </span>
-
-  
-    <span class="post-meta-item" title="本文字数">
-      <span class="post-meta-item-icon">
-        <i class="far fa-file-word"></i>
-      </span>
-      <span class="post-meta-item-text">本文字数：</span>
-      <span>2.2k</span>
-    </span>
-    <span class="post-meta-item" title="阅读时长">
-      <span class="post-meta-item-icon">
-        <i class="far fa-clock"></i>
-      </span>
-      <span class="post-meta-item-text">阅读时长 &asymp;</span>
-      <span>4 分钟</span>
-    </span>
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>这篇是《置身事内——中国政府与经济发展》的读书笔记和部分片段摘录。</p>
-          <!--noindex-->
-            <div class="post-button">
-              <a class="btn" href="/post/c6e02c3/#more" rel="contents">
-                阅读全文 &raquo;
-              </a>
-            </div>
-          <!--/noindex-->
-        
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
 
 
 </div>

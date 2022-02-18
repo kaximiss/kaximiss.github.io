@@ -9,16 +9,44 @@
     <atom:link href="https://kaximiss.github.io/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description></description>
-    <pubDate>Thu, 17 Feb 2022 13:55:25 GMT</pubDate>
+    <pubDate>Fri, 18 Feb 2022 09:38:31 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
+      <title>APUE_note</title>
+      <link>https://kaximiss.github.io/post/d1b40951/</link>
+      <guid>https://kaximiss.github.io/post/d1b40951/</guid>
+      <pubDate>Fri, 18 Feb 2022 09:03:56 GMT</pubDate>
+      
+        
+        
+      <description>&lt;h1 id=&quot;Chapter1-Unix基础知识&quot;&gt;&lt;a href=&quot;#Chapter1-Unix基础知识&quot; class=&quot;headerlink&quot; title=&quot;Chapter1 Unix基础知识&quot;&gt;&lt;/a&gt;Chapter1 Unix基础知识&lt;/h1&gt;&lt;p&gt;从认识内核、系统调用</description>
+        
+      
+      
+      
+      <content:encoded><![CDATA[<h1 id="Chapter1-Unix基础知识"><a href="#Chapter1-Unix基础知识" class="headerlink" title="Chapter1 Unix基础知识"></a>Chapter1 Unix基础知识</h1><p>从认识内核、系统调用、shell、应用程序的关系开始：</p><p><img src="/./APUE-note/c1p1.png" alt="image-20220218172954224"></p>]]></content:encoded>
+      
+      
+      <category domain="https://kaximiss.github.io/categories/%E7%AC%94%E8%AE%B0/">笔记</category>
+      
+      
+      <category domain="https://kaximiss.github.io/tags/unix/">unix</category>
+      
+      <category domain="https://kaximiss.github.io/tags/%E7%BC%96%E7%A8%8B/">编程</category>
+      
+      
+      <comments>https://kaximiss.github.io/post/d1b40951/#disqus_thread</comments>
+      
+    </item>
+    
+    <item>
       <title>咱们老百姓&quot;同情的理解&quot;</title>
-      <link>https://kaximiss.github.io/posts/c6e02c3.html</link>
-      <guid>https://kaximiss.github.io/posts/c6e02c3.html</guid>
+      <link>https://kaximiss.github.io/post/c6e02c3/</link>
+      <guid>https://kaximiss.github.io/post/c6e02c3/</guid>
       <pubDate>Thu, 17 Feb 2022 11:59:16 GMT</pubDate>
       
-      <description>&lt;p&gt;这篇是《置身事内——中国政府与经济发展》的读书笔记和部分片段摘录。</description>
+      <description>&lt;p&gt;这篇是《置身事内——中国政府与经济发展》的读书笔记和部分片段摘录。&lt;/p&gt;</description>
       
       
       
@@ -33,7 +61,7 @@
       <category domain="https://kaximiss.github.io/tags/%E4%B8%AD%E5%9B%BD/">中国</category>
       
       
-      <comments>https://kaximiss.github.io/posts/c6e02c3.html#disqus_thread</comments>
+      <comments>https://kaximiss.github.io/post/c6e02c3/#disqus_thread</comments>
       
     </item>
     

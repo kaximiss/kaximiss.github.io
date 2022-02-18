@@ -1,8 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>APUE_note</title>
+    <url>/post/d1b40951/</url>
+    <content><![CDATA[<h1 id="Chapter1-Unix基础知识"><a href="#Chapter1-Unix基础知识" class="headerlink" title="Chapter1 Unix基础知识"></a>Chapter1 Unix基础知识</h1><p>从认识内核、系统调用、shell、应用程序的关系开始：</p>
+<p><img src="/./APUE-note/c1p1.png" alt="image-20220218172954224"></p>
+]]></content>
+      <categories>
+        <category>笔记</category>
+      </categories>
+      <tags>
+        <tag>unix</tag>
+        <tag>编程</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>咱们老百姓&quot;同情的理解&quot;</title>
-    <url>/posts/c6e02c3.html</url>
+    <url>/post/c6e02c3/</url>
     <content><![CDATA[<p>这篇是《置身事内——中国政府与经济发展》的读书笔记和部分片段摘录。<span id="more"></span></p>
 <p>咱们老百姓要了解政府在经济发展中扮演的角色，首先要把“政府”这个庞大的概念细分开：“条条”和“块块”——垂直方向的上下级关系，水平方向的同级关系，从不同方向上影响财政。 </p>
 <p>所以首先是第一个问题：如何划分行政区域？经济发展落到实处，需要划出一个个“执行单位”去做事，要考虑自然条件和人文历史因素，还要使得执行效率尽量高。关键的概念叫做外部性，就是某区域的事务对其他区域的影响大小，要尽量减少部门协同给上级带来的行政压力。细分成讲三个考虑点：不同公共服务的辐射范围、人文分布影响的行政效率、区域边界的行政穷困。不同公共服务的维护成本影响范围不同，辐射范围超大的归于上级，辐射范围有限的交与各个下级区划，有多大预算就服务多大体量；人口密度、文化特点受地理和历史因素影响，需要安排多少的人来管，又需要把哪些人放在一起管；区域边界容易出现三不管现象，交界处容易出现两边交接不顺利或是发展不同步的现象，也是区域矛盾的爆发点。 </p>
